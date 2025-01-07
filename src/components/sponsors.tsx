@@ -8,7 +8,7 @@ import {
 export default function Sponsors() {
   return (
     <>
-      <div className="py-24 lg:py-32">
+      <div className="border-t py-24 lg:py-32">
         <div className="max-w-2xl mx-auto pb-20">
           <div className="grid gap-12">
             <div>

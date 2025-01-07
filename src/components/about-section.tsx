@@ -2,12 +2,12 @@ import { Building2Icon, ThumbsUpIcon, Speech, Code2Icon } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <div className="py-24 lg:py-32">
-      <div className="max-w-2xl mx-auto">
-        <div className="grid gap-12">
+    <div className="border-t py-24 lg:py-32 relative overflow-hidden">
+      <div className="container mx-auto max-w-7xl px-8">
+        <div className="max-w-2xl mx-auto">
           <div>
             <h2 className="text-3xl font-bold lg:text-4xl pb-10">About Us</h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="mt-3 pb-10 text-muted-foreground">
               PyCon Kenya is a community-driven conference that aims to provide
               a platform for the growth of the Python community in Kenya. We
               believe that diversity and inclusivity are essential for the
