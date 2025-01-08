@@ -1,19 +1,45 @@
-import HorizontalScrollCarousel from "@/components/ui/horizontal-scroll";
+import BlurFade from "./ui/blur-fade";
+import Image from "next/image";
 
 export default function Gallery() {
   const images = [
-    "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1950",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1948",
-    "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=2070",
-    "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?q=80&w=2070",
-    "https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?q=80&w=2070",
-    "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?q=80&w=2070",
-    "https://images.unsplash.com/photo-1572099606223-6e29045d7de3?q=80&w=2070",
-    
+    "/gallery/DSC_0004-4.jpg",
+    "/gallery/DSC_0033-3.jpg",
+    "/gallery/DSC_0086-5.jpg",
+    "/gallery/DSC_0100.jpg",
+    "/gallery/DSC_0142-3.jpg",
+    "/gallery/DSC_0221-3.jpg",
+    "/gallery/DSC02580.jpg",
+    "/gallery/DSC_0339-3.jpg",
+    "/gallery/DSC_0354-3.jpg",
+    "/gallery/DSC_0427-3.jpg",
+    "/gallery/DSC_0508-2.jpg",
+    "/gallery/DSC_0572-2.jpg",
+    "/gallery/DSC_0618-3.jpg",
+    "/gallery/DSC_0623-4.jpg",
+    "/gallery/DSC_0666-4.jpg",
+    "/gallery/DSC_0692-4.jpg",
+    "/gallery/DSC_0817-3.jpg",
+    "/gallery/DSC_0965-3.jpg",
+    "/gallery/DSC_0987-3.jpg",
   ];
   return (
-    <div className="border-t relative w-full">
-      <HorizontalScrollCarousel images={images} />
+    <div className="border-t py-12 lg:py-20 relative overflow-hidden">
+      <div className="container mx-auto px-8">
+        <div className="columns-2 gap-4 sm:columns-3">
+          {images.map((imageUrl, idx) => (
+            <BlurFade key={imageUrl} delay={0.25 + idx * 0.05} inView={true}>
+              <Image
+                className="mb-4 size-full rounded-lg object-contain"
+                src={imageUrl}
+                width={600}
+                height={600}
+                alt="Gallery"
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

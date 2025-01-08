@@ -1,70 +1,74 @@
-import {
-  BookOpenIcon,
-  MessagesSquareIcon,
-  Settings2Icon,
-  TabletSmartphoneIcon,
-} from "lucide-react";
+import Image from "next/image";
+
+const sponsors = [
+  {
+    title: "Twiga",
+    image: "/sponsors/twiga.png",
+    url: "https://www.twiga.com/",
+  },
+  {
+    title: "New Relic",
+    image: "/sponsors/newrelic.png",
+    url: "https://newrelic.com/",
+  },
+  {
+    title: "Postman",
+    image: "/sponsors/postman.png",
+    url: "https://www.postman.com/",
+  },
+  {
+    title: "Moringa",
+    image: "/sponsors/moringa.png",
+    url: "https://moringaschool.com/",
+  },
+  {
+    title: "Python Software Foundation",
+    image: "/sponsors/psf.png",
+    url: "https://www.python.org/psf/",
+  },
+  {
+    title: "James Nzomo Foundation",
+    image: "/sponsors/jnf.png",
+    url: "https://www.jamesnzomo.org/",
+  },
+];
 
 export default function Sponsors() {
   return (
-    <>
-      <div className="border-t py-24 lg:py-32">
-        <div className="max-w-2xl mx-auto pb-20">
-          <div className="grid gap-12">
-            <div>
-              <h2 className="text-3xl font-bold lg:text-4xl text-center">
-                Previous Sponsors
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
-          <div className="text-center">
-            <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <TabletSmartphoneIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Responsive</h3>
-              <p className="mt-1 text-muted-foreground">
-                Responsive, and mobile-first project on the web
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <Settings2Icon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Customizable</h3>
-              <p className="mt-1 text-muted-foreground">
-                Components are easily customized and extendable
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <BookOpenIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="mt-3">
-              <h3 className="text-lg font-semibold ">Documentation</h3>
-              <p className="mt-1 text-muted-foreground">
-                Every component and plugin is well documented
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center items-center w-12 h-12 bg-primary border rounded-full mx-auto">
-              <MessagesSquareIcon className="flex-shrink-0 w-5 h-5 text-primary-foreground" />
-            </div>
-            <div className="mt-3">
-              <h3 className="text-lg font-semibold ">24/7 Support</h3>
-              <p className="mt-1 text-muted-foreground">
-                Contact us 24 hours a day, 7 days a week
-              </p>
-            </div>
+    <div className="border-t py-12 lg:py-20 relative overflow-hidden">
+      <div className="max-w-2xl mx-auto pb-20">
+        <div className="grid gap-12">
+          <div>
+            <h2 className="text-3xl font-bold lg:text-4xl text-center">
+              Previous Sponsors
+            </h2>
           </div>
         </div>
       </div>
-    </>
+      <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+        {sponsors.map((sponsors) => (
+          <div key={sponsors.title} className="text-center">
+            <div className="flex justify-center items-center w-24 h-24 mx-auto">
+              <a href={sponsors.url} target="_blank" rel="noreferrer">
+                <Image
+                  src={sponsors.image}
+                  alt={sponsors.title}
+                  width={120}
+                  height={120}
+                  className="w-24 h-24 object-contain"
+                />
+              </a>
+            </div>
+            <div className="mt-3">
+              <h3 className="text-lg font-semibold ">
+                <a href={sponsors.url} target="_blank" rel="noreferrer">
+                  {sponsors.title}
+                </a>
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

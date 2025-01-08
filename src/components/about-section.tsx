@@ -2,7 +2,7 @@ import { Building2Icon, ThumbsUpIcon, Speech, Code2Icon } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <div className="border-t py-24 lg:py-32 relative overflow-hidden">
+    <div className="border-t py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto max-w-7xl px-8">
         <div className="max-w-2xl mx-auto">
           <div>

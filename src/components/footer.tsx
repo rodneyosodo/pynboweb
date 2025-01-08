@@ -29,7 +29,7 @@ const sections = [
   
   const Footer = () => {
     return (
-      <section className="border-t relative overflow-hidden py-32">
+      <section className="border-t relative overflow-hidden py-10">
         <div className="container mx-auto max-w-7xl px-8">
           <footer>
             <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
