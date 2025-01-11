@@ -2,19 +2,19 @@ const sections = [
   {
     title: "About",
     links: [
-      { name: "Overview", href: "#overiew" },
-      { name: "Schedule", href: "#schedule" },
-      { name: "Speakers", href: "#speakers" },
-      { name: "Proposal Guidelines", href: "#proposal" },
+      { name: "Overview", href: "/overview" },
+      { name: "Schedule", href: "/schedule" },
+      { name: "Speakers", href: "/speakers" },
+      { name: "Proposal Guidelines", href: "/proposal" },
     ],
   },
   {
     title: "Program",
     links: [
-      { name: "What is PyNBO", href: "#what-is-pynbo" },
-      { name: "Code of Conduct", href: "#code-of-conduct" },
-      { name: "Python Software Foundation", href: "#psf" },
-      { name: "Support", href: "#support" },
+      { name: "What is PyNBO", href: "/what-is-pynbo" },
+      { name: "Code of Conduct", href: "/code-of-conduct" },
+      { name: "Python Software Foundation", href: "/psf" },
+      { name: "Support", href: "/support" },
     ],
   },
   {
@@ -27,7 +27,7 @@ const sections = [
   },
 ];
 
-const Footer = () => {
+export default function Footer() {
   return (
     <section className="border-t relative overflow-hidden py-10">
       <div className="container mx-auto max-w-7xl px-8">
@@ -61,10 +61,10 @@ const Footer = () => {
             <p>© 2025 PyConKE. All rights reserved.</p>
             <ul className="flex gap-4">
               <li className="underline hover:text-primary">
-                <a href="#terms-and-conditions"> Terms and Conditions</a>
+                <a href="/terms-and-conditions"> Terms and Conditions</a>
               </li>
               <li className="underline hover:text-primary">
-                <a href="#privacy-policy"> Privacy Policy</a>
+                <a href="/privacy-policy"> Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -72,6 +72,4 @@ const Footer = () => {
       </div>
     </section>
   );
-};
-
-export default Footer;
+}

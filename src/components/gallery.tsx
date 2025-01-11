@@ -1,28 +1,7 @@
-import BlurFade from "./ui/blur-fade";
+import BlurFade from "@/components/ui/blur-fade";
 import Image from "next/image";
 
-export default function Gallery() {
-  const images = [
-    "/gallery/DSC_0004-4.jpg",
-    "/gallery/DSC_0033-3.jpg",
-    "/gallery/DSC_0086-5.jpg",
-    "/gallery/DSC_0100.jpg",
-    "/gallery/DSC_0142-3.jpg",
-    "/gallery/DSC_0221-3.jpg",
-    "/gallery/DSC02580.jpg",
-    "/gallery/DSC_0339-3.jpg",
-    "/gallery/DSC_0354-3.jpg",
-    "/gallery/DSC_0427-3.jpg",
-    "/gallery/DSC_0508-2.jpg",
-    "/gallery/DSC_0572-2.jpg",
-    "/gallery/DSC_0618-3.jpg",
-    "/gallery/DSC_0623-4.jpg",
-    "/gallery/DSC_0666-4.jpg",
-    "/gallery/DSC_0692-4.jpg",
-    "/gallery/DSC_0817-3.jpg",
-    "/gallery/DSC_0965-3.jpg",
-    "/gallery/DSC_0987-3.jpg",
-  ];
+export default function Gallery({ images }: { images: string[] }) {
   return (
     <div className="border-t py-12 lg:py-20 relative overflow-hidden">
       <div className="container mx-auto px-8">

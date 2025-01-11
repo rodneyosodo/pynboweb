@@ -1,19 +1,37 @@
 import AboutSection from "@/components/about-section";
-import HeroSection from "../components/hero-section";
-import NavBar from "@/components/nav-bar";
+import HeroSection from "@/components/hero-section";
 import Sponsors from "@/components/sponsors";
 import Gallery from "@/components/gallery";
-import Footer from "@/components/footer";
+
+const images = [
+  "/gallery/DSC_0004-4.jpg",
+  "/gallery/DSC_0033-3.jpg",
+  "/gallery/DSC_0086-5.jpg",
+  "/gallery/DSC_0100.jpg",
+  "/gallery/DSC_0142-3.jpg",
+  "/gallery/DSC_0221-3.jpg",
+  "/gallery/DSC02580.jpg",
+  "/gallery/DSC_0339-3.jpg",
+  "/gallery/DSC_0354-3.jpg",
+  "/gallery/DSC_0427-3.jpg",
+  "/gallery/DSC_0508-2.jpg",
+  "/gallery/DSC_0572-2.jpg",
+  "/gallery/DSC_0618-3.jpg",
+  "/gallery/DSC_0623-4.jpg",
+  "/gallery/DSC_0666-4.jpg",
+  "/gallery/DSC_0692-4.jpg",
+  "/gallery/DSC_0817-3.jpg",
+  "/gallery/DSC_0965-3.jpg",
+  "/gallery/DSC_0987-3.jpg",
+];
 
 export default function Home() {
   return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-      <NavBar />
+    <>
       <HeroSection />
       <AboutSection />
-      <Gallery />
+      <Gallery images={images} />
       <Sponsors />
-      <Footer />
-    </div>
+    </>
   );
 }
