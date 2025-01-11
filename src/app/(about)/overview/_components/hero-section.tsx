@@ -1,11 +1,8 @@
-import { RainbowButton } from "@/components/ui/rainbow-button";
-
 export default function HeroSection() {
   return (
     <div className="relative overflow-hidden py-24 lg:py-32">
       <div className="container mx-auto max-w-7xl px-8">
         <div className="max-w-2xl text-center mx-auto">
-          <RainbowButton className="mb-10">Get Your Ticket</RainbowButton>
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Welcome to PyCon Kenya 2025
           </h1>

@@ -4,7 +4,6 @@ import {
   Menu,
   PhoneCall,
   ShieldCheck,
-  Sunset,
   Target,
   Trees,
   Users,
@@ -38,32 +37,31 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 
 const subMenuItemsOne = [
   {
     title: "Overview",
-    url: "#overiew",
+    url: "/overview",
     description: "The overview of the conference",
     icon: <Target className="size-5 shrink-0" />,
   },
   {
     title: "Schedule",
-    url: "#schedule",
+    url: "/schedule",
     description: "African time is not allowed",
     icon: <CalendarClock className="size-5 shrink-0" />,
   },
   {
     title: "Speakers",
-    url: "#speakers",
+    url: "/speakers",
     description: "List of our fantastic speakers",
     icon: <Users className="size-5 shrink-0" />,
   },
   {
     title: "Proposal Guidelines",
-    url: "#proposal",
+    url: "/proposal",
     description: "How to submit a proposal to the conference",
     icon: <ShieldCheck className="size-5 shrink-0" />,
   },
@@ -72,28 +70,28 @@ const subMenuItemsOne = [
 const subMenuItemsTwo = [
   {
     title: "What is PyNBO",
-    url: "#what-is-pynbo",
+    url: "/what-is-pynbo",
     description:
       "PyNBO is a non-profit organization that aims to promote the use of Python in Kenya",
     icon: <Zap className="size-5 shrink-0" />,
   },
   {
     title: "Code of Conduct",
-    url: "#code-of-conduct",
+    url: "/code-of-conduct",
     description:
       "We expect all community members to follow our code of conduct when interacting with each other",
     icon: <Book className="size-5 shrink-0" />,
   },
   {
     title: "Python Software Foundation",
-    url: "#psf",
+    url: "/psf",
     description:
       "PSF is a non-profit organization that promotes, protects, and advances the Python programming language",
     icon: <Trees className="size-5 shrink-0" />,
   },
   {
     title: "Support",
-    url: "#support",
+    url: "/support",
     description: "Get in touch with us if you need help",
     icon: <PhoneCall className="size-5 shrink-0" />,
   },
@@ -122,7 +120,7 @@ export default function Navbar1() {
                     variant: "ghost",
                   }),
                 )}
-                href="#home"
+                href="/"
               >
                 Home
               </a>
@@ -199,7 +197,7 @@ export default function Navbar1() {
                     variant: "ghost",
                   }),
                 )}
-                href="#sponsors"
+                href="/sponsors"
               >
                 Sponsors
               </a>

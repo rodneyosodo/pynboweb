@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Mali } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/nav-bar";
+import Footer from "@/components/footer";
 
 const mali = Mali({
   weight: "500",
@@ -43,7 +45,13 @@ export default function RootLayout({
         <meta name="twitter:image:width" content="1200" />
         <meta name="twitter:image:height" content="630" />
       </head>
-      <body className={`${mali.className} antialiased`}>{children}</body>
+      <body className={`${mali.className} antialiased`}>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+          <NavBar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
