@@ -3,6 +3,7 @@ import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
 import type React from "react";
 import type { JSX } from "react";
 import { cn } from "@/lib/utils";
+import Sponsors from "@/app/(articles)/_components/sponsors";
 
 function slugify(str: string) {
   return str
@@ -48,6 +49,8 @@ const components = {
   h4: createHeading(4),
   h5: createHeading(5),
   h6: createHeading(6),
+  // biome-ignore lint/style/useNamingConvention: <explanation>
+  Sponsors: Sponsors,
 
   a: ({ className = "" as string, ...props }) => (
     <a
