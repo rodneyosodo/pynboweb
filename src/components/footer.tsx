@@ -20,9 +20,10 @@ const sections = [
   {
     title: "Social",
     links: [
-      { name: "Twitter", href: "#twitter" },
-      { name: "Instagram", href: "#instagram" },
-      { name: "LinkedIn", href: "#linkedin" },
+      { name: "Twitter", href: "https://x.com/pythonairobi" },
+      { name: "Instagram", href: "https://www.instagram.com/pynbo/?hl=en" },
+      { name: "Meetup", href: "https://www.meetup.com/python-nairobi/" },
+      { name: "LinkedIn", href: "https://www.linkedin.com/groups/13625530/" },
     ],
   },
 ];

@@ -104,12 +104,16 @@ export default function Navbar1() {
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-10">
             <div className="flex items-center gap-4">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                className="w-8"
-                alt="python-logo"
-              />
-              <span className="text-xl font-bold">PyConKE</span>
+              <a href="/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                  className="w-8"
+                  alt="python-logo"
+                />
+              </a>
+              <span className="text-xl font-bold">
+                <a href="/">PyConKE</a>
+              </span>
             </div>
             <div className="flex items-center">
               <a
@@ -208,8 +212,8 @@ export default function Navbar1() {
               <DropdownMenuTrigger>Past Events</DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>2022</DropdownMenuItem>
+                <DropdownMenuItem>2018</DropdownMenuItem>
                 <DropdownMenuItem>2017</DropdownMenuItem>
-                <DropdownMenuItem>2016</DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
@@ -217,12 +221,16 @@ export default function Navbar1() {
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                className="w-8"
-                alt="python-logo"
-              />
-              <span className="text-xl font-bold">PyConKE</span>
+              <a href="/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                  className="w-8"
+                  alt="python-logo"
+                />
+              </a>
+              <span className="text-xl font-bold">
+                <a href="/">PyConKE</a>
+              </span>
             </div>
             <Sheet>
               <SheetTrigger asChild={true}>
@@ -234,12 +242,16 @@ export default function Navbar1() {
                 <SheetHeader>
                   <SheetTitle>
                     <div className="flex items-center gap-2">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                        className="w-8"
-                        alt="python-logo"
-                      />
-                      <span className="text-xl font-bold">PyConKE</span>
+                      <a href="/">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                          className="w-8"
+                          alt="python-logo"
+                        />
+                      </a>
+                      <span className="text-xl font-bold">
+                        <a href="/">PyConKE</a>
+                      </span>
                     </div>
                   </SheetTitle>
                 </SheetHeader>
@@ -304,7 +316,7 @@ export default function Navbar1() {
                   </a>
                 </div>
                 <div className="border-t pt-4">
-                  <div className="grid grid-cols-2 justify-start">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 justify-start">
                     <a
                       className={cn(
                         buttonVariants({
@@ -333,8 +345,8 @@ export default function Navbar1() {
                       <DropdownMenuTrigger>Past Events</DropdownMenuTrigger>
                       <DropdownMenuContent>
                         <DropdownMenuItem>2022</DropdownMenuItem>
+                        <DropdownMenuItem>2018</DropdownMenuItem>
                         <DropdownMenuItem>2017</DropdownMenuItem>
-                        <DropdownMenuItem>2016</DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>

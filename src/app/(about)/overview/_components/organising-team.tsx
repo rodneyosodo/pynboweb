@@ -15,7 +15,7 @@ const team = [
   {
     description: "Kelvin Ndemo",
     id: "kelvin",
-    title: "Chairman",
+    title: "Organizer",
     src: "/team/kelvin.jpg",
     ctaText: "Visit",
     ctaLink: "#",
@@ -37,7 +37,7 @@ const team = [
   {
     description: "Monica Oyugi",
     id: "monica",
-    title: "Co-Chair",
+    title: "Co-Organizer",
     src: "/team/monica.jpg",
     ctaText: "Visit",
     ctaLink: "#",
@@ -83,7 +83,7 @@ const team = [
     description: "Prisca Akinyi",
     id: "prisca",
     title: "Co - Event Manager",
-    src: "/team/prisca.jpg",
+    src: "/team/prisca.jfif",
     ctaText: "Visit",
     ctaLink: "#",
     content: () => {
