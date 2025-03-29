@@ -83,7 +83,7 @@ const team = [
     description: "Prisca Akinyi",
     id: "prisca",
     title: "Co - Event Manager",
-    src: "/team/prisca.jfif",
+    src: "/team/prisca.jpg",
     ctaText: "Visit",
     ctaLink: "#",
     content: () => {
