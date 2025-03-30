@@ -37,7 +37,7 @@ const team = [
   {
     description: "Monica Oyugi",
     id: "monica",
-    title: "Co-Organizer",
+    title: "Organizer",
     src: "/team/monica.jpg",
     ctaText: "Visit",
     ctaLink: "#",
@@ -82,7 +82,7 @@ const team = [
   {
     description: "Prisca Akinyi",
     id: "prisca",
-    title: "Co - Event Manager",
+    title: "Event Manager",
     src: "/team/prisca.jpg",
     ctaText: "Visit",
     ctaLink: "#",
@@ -127,7 +127,7 @@ const team = [
 
 export function OrganisingTeam() {
   const [active, setActive] = useState<(typeof team)[number] | boolean | null>(
-    null,
+    null
   );
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
@@ -167,7 +167,7 @@ export function OrganisingTeam() {
         {active && typeof active === "object" ? (
           <div className="fixed inset-0  grid place-items-center z-[100]">
             <motion.button
-              key={`button-${active.title}-${id}`}
+              key={`button-${active.id}-${id}`}
               layout={true}
               initial={{
                 opacity: 0,
@@ -187,11 +187,11 @@ export function OrganisingTeam() {
               <X />
             </motion.button>
             <motion.div
-              layoutId={`card-${active.title}-${id}`}
+              layoutId={`card-${active.id}-${id}`}
               ref={ref}
               className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
+              <motion.div layoutId={`image-${active.id}-${id}`}>
                 <Image
                   priority={true}
                   width={1000}
@@ -206,7 +206,7 @@ export function OrganisingTeam() {
                 <div className="flex justify-between items-start p-4">
                   <div className="">
                     <motion.h3
-                      layoutId={`title-${active.title}-${id}`}
+                      layoutId={`title-${active.id}-${id}`}
                       className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
                     >
                       {active.title}
@@ -265,13 +265,13 @@ export function OrganisingTeam() {
       <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
         {team.map((card) => (
           <motion.div
-            layoutId={`card-${card.title}-${id}`}
-            key={card.title}
+            layoutId={`card-${card.id}-${id}`}
+            key={card.id}
             onClick={() => setActive(card)}
             className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
-              <motion.div layoutId={`image-${card.title}-${id}`}>
+              <motion.div layoutId={`image-${card.id}-${id}`}>
                 <Image
                   width={1000}
                   height={1000}
@@ -282,7 +282,7 @@ export function OrganisingTeam() {
               </motion.div>
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
-                  layoutId={`title-${card.title}-${id}`}
+                  layoutId={`title-${card.id}-${id}`}
                   className="font-medium text-neutral-800 dark:text-neutral-200 text-center md:text-left text-base"
                 >
                   {card.title}
