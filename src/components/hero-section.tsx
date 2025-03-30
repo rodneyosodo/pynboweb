@@ -35,10 +35,10 @@ export default function HeroSection() {
             className="rounded-xl"
             alt="PyConKE 2022"
           />
-          <div className="absolute bottom-12 -start-20 -z-[1] w-48 h-48 bg-gradient-to-b from-primary-foreground via-primary-foreground to-background p-px rounded-lg">
+          <div className="absolute bottom-12 -start-20 -z-1 w-48 h-48 bg-linear-to-b from-primary-foreground via-primary-foreground to-background p-px rounded-lg">
             <div className="w-48 h-48 rounded-lg bg-background/10" />
           </div>
-          <div className="absolute -top-12 -end-20 -z-[1] w-48 h-48 bg-gradient-to-t from-primary-foreground via-primary-foreground to-background p-px rounded-full">
+          <div className="absolute -top-12 -end-20 -z-1 w-48 h-48 bg-linear-to-t from-primary-foreground via-primary-foreground to-background p-px rounded-full">
             <div className="w-48 h-48 rounded-full bg-background/10" />
           </div>
         </div>

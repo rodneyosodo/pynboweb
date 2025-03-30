@@ -16,7 +16,7 @@ export default function AboutSection() {
           </div>
           <div className="space-y-6 lg:space-y-10">
             <div className="flex">
-              <Building2Icon className="flex-shrink-0 mt-2 h-6 w-6" />
+              <Building2Icon className="shrink-0 mt-2 h-6 w-6" />
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
                   Building a welcoming community
@@ -28,7 +28,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="flex">
-              <Speech className="flex-shrink-0 mt-2 h-6 w-6" />
+              <Speech className="shrink-0 mt-2 h-6 w-6" />
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">Talks</h3>
                 <p className="mt-1 text-muted-foreground">
@@ -38,7 +38,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="flex">
-              <Code2Icon className="flex-shrink-0 mt-2 h-6 w-6" />
+              <Code2Icon className="shrink-0 mt-2 h-6 w-6" />
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
                   Workshops
@@ -50,7 +50,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div className="flex">
-              <ThumbsUpIcon className="flex-shrink-0 mt-2 h-6 w-6" />
+              <ThumbsUpIcon className="shrink-0 mt-2 h-6 w-6" />
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
                   Simple and all-inclusive
