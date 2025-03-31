@@ -107,18 +107,17 @@ const team = [
     title: "Program Director",
     src: "/team/rodney.jpg",
     ctaText: "Visit",
-    ctaLink: "#",
+    ctaLink: "http://www.rodneyosodo.com",
     content: () => {
       return (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-          <br /> <br /> Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+          After spending 5 years learning how to build robots in Mechatronics
+          Engineering, I decided the most rebellious career move was to...sit at
+          a desk and write software all day.
+          <br /> <br />
+          In my spare time, I convince mechanical engineers that Python isn't a
+          snake and convince software developers that robots won't take their
+          jobs... yet.
         </p>
       );
     },
@@ -127,7 +126,7 @@ const team = [
 
 export function OrganisingTeam() {
   const [active, setActive] = useState<(typeof team)[number] | boolean | null>(
-    null
+    null,
   );
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
