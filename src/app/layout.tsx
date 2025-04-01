@@ -37,8 +37,8 @@ export const metadata: Metadata = {
     siteName: "PyConKE 2025",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.png`,
-        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.png`,
+        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
+        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
         alt: "PyConKE 2025",
         type: "image/png",
         width: 1200,
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
       "Africa's largest Python conference, held in Nairobi, Kenya. Join us for a weekend of inspiring talks, informative workshops, and fun networking events.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.png`,
-        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.png`,
+        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
+        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
         alt: "PyConKE 2025",
         type: "image/png",
         width: 1200,
