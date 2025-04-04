@@ -40,7 +40,7 @@ const team = [
     title: "Organizer",
     src: "/team/monica.jpg",
     ctaText: "Visit",
-    ctaLink: "#",
+    ctaLink: "https://www.linkedin.com/in/monicaoyugi",
     content: () => {
       return (
         <p>
@@ -51,6 +51,7 @@ I actively contribute to the tech landscape as a member of the Code of Conduct (
 for the Python Software Foundation and as the volunteer co-chair for DjangoConUs. Additionally, 
 I serve on the CoC for Droidcon Kenya and the API Festival, as well as for Women Techmakers by Google.
 <br>My mission is to enhance technology by helping and connecting engineers, fostering a collaborative environment where innovation can thrive.</br>
+
         </p>
          
       );
