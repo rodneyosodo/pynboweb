@@ -43,9 +43,16 @@ const team = [
     ctaLink: "#",
     content: () => {
       return (
-        <p> Quality Assurance Engineer 
-          <br /> <br /> 
+        <p>
+I am a Quality Assurance Engineer with over six years 
+of experience in the tech ecosystem. My background includes roles in software engineering, 
+product management, digital marketing, and event organization within the tech community.
+I actively contribute to the tech landscape as a member of the Code of Conduct (CoC)
+for the Python Software Foundation and as the volunteer co-chair for DjangoConUs. Additionally, 
+I serve on the CoC for Droidcon Kenya and the API Festival, as well as for Women Techmakers by Google.
+<br>My mission is to enhance technology by helping and connecting engineers, fostering a collaborative environment where innovation can thrive.</br>
         </p>
+         
       );
     },
   },
