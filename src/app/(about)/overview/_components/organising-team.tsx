@@ -55,7 +55,8 @@ const team = [
           for DjangoConUs. Additionally, 
           I serve on the CoC for Droidcon Kenya and the API Festival and for 
           Women Techmakers by Google.
-          <br> </br> My mission is to enhance technology by helping and connecting engineers 
+          <br /> <br />
+          My mission is to enhance technology by helping and connecting engineers 
           and fostering a collaborative environment where innovation can thrive.
         </p>
          
