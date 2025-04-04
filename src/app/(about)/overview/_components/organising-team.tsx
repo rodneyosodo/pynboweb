@@ -57,7 +57,6 @@ const team = [
           Women Techmakers by Google.
           <br> </br> My mission is to enhance technology by helping and connecting engineers 
           and fostering a collaborative environment where innovation can thrive.
-          
         </p>
          
       );
