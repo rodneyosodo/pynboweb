@@ -40,19 +40,26 @@ const team = [
     title: "Organizer",
     src: "/team/monica.jpg",
     ctaText: "Visit",
-    ctaLink: "#",
+    ctaLink: "https://www.linkedin.com/in/monicaoyugi",
     content: () => {
       return (
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-          <br /> <br /> Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+          I am a Quality Assurance Engineer with over six years 
+          of experience in the tech ecosystem. My background includes 
+          roles in software engineering, 
+          product management, digital marketing, and event organization within the 
+          tech community.
+          I actively contribute to the tech landscape as a member of the 
+          Code of Conduct (CoC)
+          for the Python Software Foundation and as the volunteer co-chair 
+          for DjangoConUs. Additionally, 
+          I serve on the CoC for Droidcon Kenya and the API Festival and for 
+          Women Techmakers by Google.
+          <br /> <br />
+          My mission is to enhance technology by helping and connecting engineers 
+          and fostering a collaborative environment where innovation can thrive.
         </p>
+         
       );
     },
   },
