@@ -10,6 +10,8 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke";
+
 export const metadata: Metadata = {
   title: "Welcome to PyCon Kenya 2025",
   description: "Africa's largest Python conference, held in Nairobi, Kenya.",
@@ -33,14 +35,14 @@ export const metadata: Metadata = {
     title: "Welcome to PyCon Kenya 2025",
     description:
       "Africa's largest Python conference, held in Nairobi, Kenya. Join us for a weekend of inspiring talks, informative workshops, and fun networking events.",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke",
+    url: baseUrl,
     siteName: "PyConKE 2025",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
-        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
+        url: `${baseUrl}/opengraph-image.jpg`,
+        secureUrl: `${baseUrl}/opengraph-image.jpg`,
         alt: "PyConKE 2025",
-        type: "image/png",
+        type: "image/jpeg",
         width: 1200,
         height: 630,
       },
@@ -53,10 +55,10 @@ export const metadata: Metadata = {
       "Africa's largest Python conference, held in Nairobi, Kenya. Join us for a weekend of inspiring talks, informative workshops, and fun networking events.",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
-        secureUrl: `${process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke"}/opengraph.jpg`,
+        url: `${baseUrl}/opengraph-image.jpg`,
+        secureUrl: `${baseUrl}/opengraph-image.jpg`,
         alt: "PyConKE 2025",
-        type: "image/png",
+        type: "image/jpeg",
         width: 1200,
         height: 630,
       },
@@ -69,7 +71,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   return (
     <html lang="en">
       <body className={`${robotoMono.className} antialiased`}>
