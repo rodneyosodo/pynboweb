@@ -59,10 +59,7 @@ const components = {
     />
   ),
   p: ({ className = "" as string, ...props }) => (
-    <p
-      className={cn("leading-7 not-first:mt-6", className)}
-      {...props}
-    />
+    <p className={cn("leading-7 not-first:mt-6", className)} {...props} />
   ),
   ul: ({ className = "" as string, ...props }) => (
     <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
