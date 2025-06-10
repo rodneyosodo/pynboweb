@@ -9,7 +9,15 @@ export default function HeroSection() {
       <div className="container mx-auto max-w-7xl px-8">
         <div className="max-w-2xl text-center mx-auto">
           <div className="flex justify-center gap-4 mb-10">
-            <RainbowButton>Get Your Ticket</RainbowButton>
+            <RainbowButton>
+              <a
+                href="https://paystack.com/buy/pyconke-early-bird"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Get Your Ticket
+              </a>
+            </RainbowButton>
             <RainbowGreyButton>
               <a
                 href="https://sessionize.com/pycon-kenya-2025/"
