@@ -211,7 +211,9 @@ export default function Navbar1() {
             <DropdownMenu>
               <DropdownMenuTrigger>Past Events</DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem>2022</DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="/2022">2022</a>
+                </DropdownMenuItem>
                 <DropdownMenuItem>2018</DropdownMenuItem>
                 <DropdownMenuItem>2017</DropdownMenuItem>
               </DropdownMenuContent>
