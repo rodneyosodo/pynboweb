@@ -155,7 +155,7 @@ export default function PyConKenyaReport({
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         <Tabs defaultValue="overview" className="space-y-8">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 gap-2">
             <TabsTrigger value="overview">Event Overview</TabsTrigger>
             <TabsTrigger value="schedule">Schedule</TabsTrigger>
             <TabsTrigger value="gallery">Photo Gallery</TabsTrigger>
