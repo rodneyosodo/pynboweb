@@ -1,16 +1,5 @@
-import Image from "next/image";
-import {
-  Calendar,
-  Clock,
-  MapPin,
-  Users,
-  Globe,
-  Award,
-  TrendingUp,
-  Code,
-  Coffee,
-  Mic,
-} from "lucide-react";
+import Gallery from "@/components/gallery";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -18,11 +7,22 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
-import Gallery from "@/components/gallery";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Award,
+  Calendar,
+  Clock,
+  Code,
+  Coffee,
+  Globe,
+  MapPin,
+  Mic,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import Image from "next/image";
 
 type Session = {
   time: string;

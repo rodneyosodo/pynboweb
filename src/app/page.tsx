@@ -1,7 +1,7 @@
 import AboutSection from "@/components/about-section";
+import Gallery from "@/components/gallery";
 import HeroSection from "@/components/hero-section";
 import Sponsors from "@/components/sponsors";
-import Gallery from "@/components/gallery";
 
 const images = [
   "/gallery/DSC_0004-4.jpg",

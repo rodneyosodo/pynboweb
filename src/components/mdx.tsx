@@ -1,9 +1,9 @@
-import Image, { type ImageProps } from "next/image";
+import Sponsors from "@/app/(articles)/_components/sponsors";
+import { cn } from "@/lib/utils";
 import { MDXRemote, type MDXRemoteProps } from "next-mdx-remote/rsc";
+import Image, { type ImageProps } from "next/image";
 import type React from "react";
 import type { JSX } from "react";
-import { cn } from "@/lib/utils";
-import Sponsors from "@/app/(articles)/_components/sponsors";
 
 function slugify(str: string) {
   return str

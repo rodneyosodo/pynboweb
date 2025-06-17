@@ -1,4 +1,4 @@
-import { Building2Icon, ThumbsUpIcon, Speech, Code2Icon } from "lucide-react";
+import { Building2Icon, Code2Icon, Speech, ThumbsUpIcon } from "lucide-react";
 
 export default function AboutSection() {
   return (

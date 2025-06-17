@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { sponsors } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Sponsors() {
   const mostRecentYear = Math.max(

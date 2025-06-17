@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/nav-bar";
-import Footer from "@/components/footer";
 import { PostHogProvider } from "@/app/providers";
+import Footer from "@/components/footer";
+import NavBar from "@/components/nav-bar";
 
 const robotoMono = Roboto_Mono({
   weight: "400",
