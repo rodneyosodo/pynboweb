@@ -31,6 +31,7 @@ export default function HeroSection() {
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Welcome to PyCon Kenya 2025
           </h1>
+          <h3 className="pt-6 text-2xl">26th - 27th September, 2025</h3>
           <p className="my-6 text-xl text-muted-foreground">
             Africa's largest Python conference, held in Nairobi, Kenya. Join us
             for a weekend of inspiring talks, informative workshops, and fun
