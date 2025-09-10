@@ -20,11 +20,11 @@ export default function HeroSection() {
             </RainbowButton>
             <RainbowGreyButton>
               <a
-                href="https://sessionize.com/pycon-kenya-2025/"
+                href="https://pycon-kenya-2025.sessionize.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                Call For Speakers
+                Schedule
               </a>
             </RainbowGreyButton>
           </div>
@@ -32,6 +32,7 @@ export default function HeroSection() {
             Welcome to PyCon Kenya 2025
           </h1>
           <h3 className="pt-6 text-2xl">26th - 27th September, 2025</h3>
+          <h4 className="pt-6 text-1xl">Daystar University, Nairobi, Kenya</h4>
           <p className="my-6 text-xl text-muted-foreground">
             Africa's largest Python conference, held in Nairobi, Kenya. Join us
             for a weekend of inspiring talks, informative workshops, and fun
