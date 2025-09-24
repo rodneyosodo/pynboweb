@@ -7,6 +7,18 @@ interface Sponsor {
 
 export const sponsors: Sponsor[] = [
   {
+    title: "Cactus Group",
+    image: "/sponsors/cactus.png",
+    url: "https://www.caktusgroup.com/",
+    year: ["2025"],
+  },
+  {
+    title: "Black Python Devs",
+    image: "/sponsors/bpd.png",
+    url: "https://blackpythondevs.com",
+    year: ["2025"],
+  },
+  {
     title: "Twiga",
     image: "/sponsors/twiga.png",
     url: "https://www.twiga.com/",
@@ -28,13 +40,13 @@ export const sponsors: Sponsor[] = [
     title: "Moringa",
     image: "/sponsors/moringa.png",
     url: "https://moringaschool.com/",
-    year: ["2022"],
+    year: ["2022", "2025"],
   },
   {
     title: "Python Software Foundation",
     image: "/sponsors/psf.png",
     url: "https://www.python.org/psf/",
-    year: ["2018", "2022"],
+    year: ["2018", "2022", "2025"],
   },
   {
     title: "James Nzomo Foundation",

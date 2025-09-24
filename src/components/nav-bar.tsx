@@ -39,6 +39,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import Link from "next/link";
 
 const subMenuItemsOne = [
   {
@@ -212,7 +213,7 @@ export default function Navbar1() {
               <DropdownMenuTrigger>Past Events</DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <a href="/2022">2022</a>
+                  <Link href="/2022">2022</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>2018</DropdownMenuItem>
                 <DropdownMenuItem>2017</DropdownMenuItem>

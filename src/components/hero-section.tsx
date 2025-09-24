@@ -32,7 +32,16 @@ export default function HeroSection() {
             Welcome to PyCon Kenya 2025
           </h1>
           <h3 className="pt-6 text-2xl">26th - 27th September, 2025</h3>
-          <h4 className="pt-6 text-1xl">Daystar University, Nairobi, Kenya</h4>
+          <h4 className="pt-6 text-1xl">
+            <a
+              href="https://maps.app.goo.gl/pYMgyQAV5ibKuuW27"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Ngong Hills Hotel, Nairobi, Kenya
+            </a>
+          </h4>
           <p className="my-6 text-xl text-muted-foreground">
             Africa's largest Python conference, held in Nairobi, Kenya. Join us
             for a weekend of inspiring talks, informative workshops, and fun
