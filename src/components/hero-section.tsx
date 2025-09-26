@@ -42,6 +42,16 @@ export default function HeroSection() {
               Ngong Hills Hotel, Nairobi, Kenya
             </a>
           </h4>
+          <h4 className="pt-6 text-1xl">
+            <a
+              href="https://discord.gg/SSXfTkJ3"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Join Our Discord Server
+            </a>
+          </h4>
           <p className="my-6 text-xl text-muted-foreground">
             Africa's largest Python conference, held in Nairobi, Kenya. Join us
             for a weekend of inspiring talks, informative workshops, and fun
