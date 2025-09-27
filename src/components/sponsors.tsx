@@ -15,7 +15,7 @@ export default function Sponsors() {
         <div className="grid gap-12">
           <div>
             <h2 className="text-3xl font-bold lg:text-4xl text-center">
-              Sponsors
+              Previous Sponsors
             </h2>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function HeroSection() {
           <div className="flex justify-center gap-4 mb-10">
             <RainbowButton>
               <a
-                href="https://paystack.com/buy/pyconke-early-bird"
+                href="https://paystack.com/buy/pyconke-2026-early-bird"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -24,24 +24,15 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Schedule
+                Call For Speakers
               </a>
             </RainbowGreyButton>
           </div>
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Welcome to PyCon Kenya 2025
+            Welcome to PyCon Kenya 2026
           </h1>
-          <h3 className="pt-6 text-2xl">26th - 27th September, 2025</h3>
-          <h4 className="pt-6 text-1xl">
-            <a
-              href="https://maps.app.goo.gl/pYMgyQAV5ibKuuW27"
-              target="_blank"
-              rel="noreferrer"
-              className="underline"
-            >
-              Ngong Hills Hotel, Nairobi, Kenya
-            </a>
-          </h4>
+          <h3 className="pt-6 text-2xl">28th - 29th August, 2026</h3>
+          <h4 className="pt-6 text-1xl">TBC</h4>
           <h4 className="pt-6 text-1xl">
             <a
               href="https://discord.gg/SSXfTkJ3"
@@ -60,7 +51,7 @@ export default function HeroSection() {
         </div>
         <div className="mt-10 relative max-w-7xl mx-auto">
           <img
-            src="/gallery/DSC_0004-4.jpg"
+            src="/gallery/landing-page.jpg"
             className="rounded-xl"
             alt="PyConKE 2022"
           />

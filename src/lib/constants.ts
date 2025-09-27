@@ -7,6 +7,12 @@ interface Sponsor {
 
 export const sponsors: Sponsor[] = [
   {
+    title: "Django Events Foundation North America",
+    image: "/sponsors/defna.png",
+    url: "https://www.defna.org/",
+    year: ["2025"],
+  },
+  {
     title: "Cactus Group",
     image: "/sponsors/cactus.png",
     url: "https://www.caktusgroup.com/",

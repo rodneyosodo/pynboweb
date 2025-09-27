@@ -40,20 +40,20 @@ const nextConfig: NextConfig = {
     ];
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/schedule",
-        destination: "https://pycon-kenya-2025.sessionize.com/schedule",
-        permanent: true, // Use true for 308 permanent redirect, false for 307 temporary
-      },
-            {
-        source: "/speakers",
-        destination: "https://pycon-kenya-2025.sessionize.com/speakers",
-        permanent: true, // Use true for 308 permanent redirect, false for 307 temporary
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/schedule",
+  //       destination: "https://pycon-kenya-2025.sessionize.com/schedule",
+  //       permanent: true, // Use true for 308 permanent redirect, false for 307 temporary
+  //     },
+  //     {
+  //       source: "/speakers",
+  //       destination: "https://pycon-kenya-2025.sessionize.com/speakers",
+  //       permanent: true, // Use true for 308 permanent redirect, false for 307 temporary
+  //     },
+  //   ];
+  // },
 
   // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
