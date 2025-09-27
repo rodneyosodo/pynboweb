@@ -40,7 +40,7 @@ export default function Footer() {
                 alt="logo"
                 className="mb-4 h-10"
               />
-              <p className="font-bold">PyConKE 2025</p>
+              <p className="font-bold">PyConKE 2026</p>
             </div>
             {sections.map((section) => (
               <div key={section.title}>

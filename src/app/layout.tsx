@@ -13,7 +13,7 @@ const robotoMono = Roboto_Mono({
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://pycon.ke";
 
 export const metadata: Metadata = {
-  title: "Welcome to PyCon Kenya 2025",
+  title: "Welcome to PyCon Kenya 2026",
   description: "Africa's largest Python conference, held in Nairobi, Kenya.",
   authors: [
     {
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    title: "Welcome to PyCon Kenya 2025",
+    title: "Welcome to PyCon Kenya 2026",
     description:
       "Africa's largest Python conference, held in Nairobi, Kenya. Join us for a weekend of inspiring talks, informative workshops, and fun networking events.",
     url: baseUrl,
-    siteName: "PyConKE 2025",
+    siteName: "PyConKE 2026",
     images: [
       {
         url: `${baseUrl}/opengraph-image.png`,
         secureUrl: `${baseUrl}/opengraph-image.png`,
-        alt: "PyConKE 2025",
+        alt: "PyConKE 2026",
         type: "image/png",
         width: 1200,
         height: 630,
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Welcome to PyCon Kenya 2025",
+    title: "Welcome to PyCon Kenya 2026",
     description:
       "Africa's largest Python conference, held in Nairobi, Kenya. Join us for a weekend of inspiring talks, informative workshops, and fun networking events.",
     images: [
       {
         url: `${baseUrl}/opengraph-image.png`,
         secureUrl: `${baseUrl}/opengraph-image.png`,
-        alt: "PyConKE 2025",
+        alt: "PyConKE 2026",
         type: "image/png",
         width: 1200,
         height: 630,
