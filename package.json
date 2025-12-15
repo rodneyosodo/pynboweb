@@ -24,7 +24,7 @@
     "framer-motion": "^12.18.1",
     "lucide-react": "^0.516.0",
     "motion": "^12.18.1",
-    "next": "15.3.3",
+    "next": "15.3.8",
     "next-mdx-remote": "^5.0.0",
     "posthog-js": "^1.253.4",
     "react": "19.1.0",
