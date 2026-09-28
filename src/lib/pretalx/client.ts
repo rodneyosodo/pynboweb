@@ -1,6 +1,7 @@
 import type {
   PretalxEvent,
   PretalxPage,
+  PretalxSchedule,
   PretalxSpeaker,
   PretalxSubmission,
   PretalxSubmissionType,
@@ -9,6 +10,20 @@ import type {
 
 const API_URL = process.env.PRETALX_API_URL;
 const API_KEY = process.env.PRETALX_API_KEY;
+
+// Thrown for any non-2xx Pretalx response, carrying the HTTP status so
+// callers can tell an expected 404 (e.g. no schedule released yet) apart
+// from a real failure (auth, network, 5xx) instead of treating every
+// error the same way.
+export class PretalxRequestError extends Error {
+  status: number;
+
+  constructor(status: number, url: string) {
+    super(`Pretalx request failed (${status}): ${url}`);
+    this.name = "PretalxRequestError";
+    this.status = status;
+  }
+}
 
 async function fetchJson<T>(url: string): Promise<T> {
   if (!API_KEY) {
@@ -19,7 +34,7 @@ async function fetchJson<T>(url: string): Promise<T> {
     next: { revalidate: 300 },
   });
   if (!response.ok) {
-    throw new Error(`Pretalx request failed (${response.status}): ${url}`);
+    throw new PretalxRequestError(response.status, url);
   }
   return response.json() as Promise<T>;
 }
@@ -60,8 +75,14 @@ function resolveSessionType(
   typeNameById: Map<number, string>,
 ): Session["type"] | null {
   const name = typeNameById.get(submissionTypeId)?.toLowerCase();
-  if (name === "talk") return "talk";
-  if (name === "workshop") return "workshop";
+  if (
+    name === "talk" ||
+    name === "workshop" ||
+    name === "keynote" ||
+    name === "remarks"
+  ) {
+    return name;
+  }
   return null;
 }
 
@@ -125,4 +146,32 @@ export async function getConfirmedSessions(): Promise<Session[]> {
 
 export async function getEventInfo(): Promise<PretalxEvent> {
   return getEvent();
+}
+
+// Fetches the currently released public schedule, fully expanded (rooms,
+// submissions, speakers, submission types) in a single request. Breaks are
+// represented as slots with a null `submission` and a `description`
+// instead - Pretalx doesn't expose a separate "breaks" resource. Slots
+// (including breaks) can only be created via the Pretalx schedule editor,
+// not the API, so managing the schedule day-to-day - including breaks -
+// happens entirely in Pretalx; this just mirrors whatever was released.
+export async function getPublishedSchedule(): Promise<{
+  event: PretalxEvent;
+  schedule: PretalxSchedule;
+}> {
+  const event = await getEvent();
+  const base = `${API_URL}${event.slug}`;
+  const expand = [
+    "slots",
+    "slots.room",
+    "slots.submission",
+    "slots.submission.speakers",
+    "slots.submission.submission_type",
+  ].join(",");
+
+  const schedule = await fetchJson<PretalxSchedule>(
+    `${base}/schedules/latest/?expand=${encodeURIComponent(expand)}`,
+  );
+
+  return { event, schedule };
 }

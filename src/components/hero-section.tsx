@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   RainbowButton,
   RainbowGreyButton,
@@ -35,10 +36,19 @@ export default function HeroSection() {
             Welcome to PyCon Kenya 2026
           </h1>
           <h3 className="pt-6 text-2xl">2nd - 3rd October, 2026</h3>
-          <h4 className="pt-6 text-1xl">TBC</h4>
+          <h4 className="pt-6 text-1xl">
+            <Link
+              href="https://maps.google.com/?q=Ngong'+Hills+Hotel,+Nairobi+Kenya"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "underline" }}
+            >
+              Location: Ngong' Hills Hotel, Nairobi Kenya
+            </Link>
+          </h4>
           <h4 className="pt-6 text-1xl">
             <a
-              href="https://discord.gg/SSXfTkJ3"
+              href="https://discord.gg/vRWK7EfPj"
               target="_blank"
               rel="noreferrer"
               className="underline"
