@@ -20,17 +20,8 @@ export default function HeroSection() {
               </a>
             </RainbowButton>
             <RainbowGreyButton>
-              <a href="/tickets/student">Student Ticket</a>
+              <a href="/schedule">View Schedule</a>
             </RainbowGreyButton>
-            {/* <RainbowGreyButton>
-              <a
-                href="https://cfp.pycon.ke/pycon-kenya-2026/cfp"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Call For Speakers
-              </a>
-            </RainbowGreyButton> */}
           </div>
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Welcome to PyCon Kenya 2026
